@@ -101,6 +101,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 1px;
+  transition: .5s ease all;
 }
 /* ! navbar end */
 /* ! sidebar start */
@@ -203,6 +204,8 @@ body {
   display: flex;
   align-items: center;
   column-gap: 30px;
+  transform: translateX(0);
+  transition: 1s all ease-in-out;
 }
 
 .movie-list-wrapper {
@@ -285,6 +288,45 @@ body {
 }
 
 /*! movie list end */
+
+/* ! dark mode start */
+.container.active{
+  background-color: white;
+}
+
+.navbar.active{
+background-color: white;
+color: black;
+}
+
+.sidebar.active{
+background-color: white;
+color: black;
+}
+
+.sidebar i.active{
+  color: black;
+}
+
+.movie-list-title.active{
+  color: black;
+}
+
+.toggle.active{
+  background-color: black;
+}
+
+.toggle-ball.active{
+  background-color: white;
+  transform: translateX(-20px);
+}
+
+.movie-list-filter select.active{
+  background-color: white;
+  color: black;
+}
+
+/* ! dark mode end */
 
 /* ! responsive start */
 @media only screen and (max-width: 800px) {
